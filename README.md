@@ -1,4 +1,6 @@
 # Welcome to your Lovable project
+https://github.com/nadiipraise/basesphere-horizon.git
+https://basesphere-horizon.lovable.app/
 
 ## Project info
 
