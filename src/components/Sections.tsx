@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Coins, Image, Code2, Server, GraduationCap } from "lucide-react";
+import { Coins, Image, Code2, Server, GraduationCap, PiggyBank } from "lucide-react";
 
 const sections = [
   {
@@ -31,6 +31,12 @@ const sections = [
     description: "Learning resources and documentation",
     icon: GraduationCap,
     gradient: "from-red-500 to-rose-400",
+  },
+  {
+    title: "Earn on Base",
+    description: "Discover ways to earn rewards and incentives",
+    icon: PiggyBank,
+    gradient: "from-indigo-500 to-violet-400",
   },
 ];
 
