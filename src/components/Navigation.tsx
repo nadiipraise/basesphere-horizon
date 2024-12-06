@@ -1,16 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, LogIn, UserPlus } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0F1E]/80 backdrop-blur-md border-b border-primary/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-              BaseSphere
-            </h1>
+          <div className="flex items-center space-x-8">
+            <Link to="/">
+              <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
+                BaseSphere
+              </h1>
+            </Link>
+            
+            <div className="hidden md:flex items-center space-x-6">
+              <Link to="/" className="text-gray-300 hover:text-white transition-colors">
+                Home
+              </Link>
+              <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
+                About
+              </Link>
+              <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
+                Contact Us
+              </Link>
+            </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
